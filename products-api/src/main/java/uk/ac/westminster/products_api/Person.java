@@ -1,5 +1,7 @@
 package uk.ac.westminster.products_api;
 
+
+
 /**
  * Week 1 starter class.
  *
@@ -17,14 +19,17 @@ public class Person {
 
     private String name;
     private String email;
+    private boolean inStock;
+
 
 
     public Person() {
     }
 
-    public Person(String name,String email1) {
+    public Person(String name,String email1,boolean inStock) {
         this.name = name;
         this.email=email1;
+        this.inStock=inStock;
     }
 
     public String getName() {
@@ -43,6 +48,10 @@ public void setEmail(String email){
 public String getEmail(){
         return email;
 }
+public boolean isInStock(){
+        return inStock;
+}
+
 
 
 
